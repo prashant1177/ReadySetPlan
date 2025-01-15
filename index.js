@@ -18,17 +18,17 @@ app.use(bodyParser.json()); // For parsing application/x-www-form-urlencoded
 app.use(express.static(path.join(__dirname, "public"))); // Static files
 
 app.get("/", (req, res) => {
-  console.log("Index.ejs is loading...");
+  // console.log("Index.ejs is loading...");
   res.render("index.ejs");
 });
 
 app.get("/login", (req, res) => {
-  console.log("login.ejs is loading...");
+  // console.log("login.ejs is loading...");
   res.render("auth/login.ejs");
 });
 
 app.get("/signup", (req, res) => {
-  console.log("signup.ejs is loading...");
+  // console.log("signup.ejs is loading...");
   res.render("auth/signup.ejs");
 });
 app.listen(3000, () => {
